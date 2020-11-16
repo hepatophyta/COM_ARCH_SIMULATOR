@@ -1,0 +1,16 @@
+	lw	0	1	Five
+	lw	1	2	3
+Start	add	1	2	1
+	beq	0	1	2
+	beq	0	0	Start
+	noop			
+Done	halt			
+Five	.fill	5		
+Neg1	.fill	-1		
+stAddr	.fill	Start		
+	nand	2	4	3
+Fuck	add	1	3	4
+	lw	2	1	Fuck
+	lw	0	1	Four
+Four	.fill	Fuck		
+	jalr	2	3	
